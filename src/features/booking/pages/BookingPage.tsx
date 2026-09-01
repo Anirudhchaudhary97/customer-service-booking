@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useServiceDetails } from "../../services/hooks/useServiceDetails";
 import { useAvailability } from "../hooks/useAvailability";
-import { useCreateBooking } from "../hooks/useCreateBooking";
 import { SlotPicker } from "../components/SlotPicker";
 import { CustomerForm } from "../components/CustomerForm";
 import { BookingSummary } from "../components/BookingSummary";
@@ -11,6 +10,7 @@ import { ErrorState } from "../../../components/ErrorState";
 import { Button } from "../../../components/Button";
 import type { CustomerDetails, TimeSlot } from "../../../types/domain";
 import "./BookingPage.css";
+import { useCreateBooking } from "../hooks/useCreateBooking";
 
 const EMPTY_CUSTOMER: CustomerDetails = { fullName: "", email: "", phone: "", address: "" };
 

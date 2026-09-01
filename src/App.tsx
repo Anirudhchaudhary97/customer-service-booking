@@ -3,6 +3,7 @@ import { ServiceListPage } from "./features/services/pages/ServiceListPage";
 import { AppNav } from "./components/AppNav";
 import { ServiceDetailsPage } from "./features/services/pages/ServiceDetailsPage";
 import { BookingPage } from "./features/booking/pages/BookingPage";
+import { MyBookingsPage } from "./features/bookings/pages/MyBookingsPage";
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/services" element={<ServiceListPage />} />
          <Route path="/services/:serviceId" element={<ServiceDetailsPage/>} />
           <Route path="/services/:serviceId/book" element={<BookingPage />} />
+           <Route path="/bookings" element={<MyBookingsPage />} />
       </Routes>
     </>
   );

@@ -1,0 +1,29 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-confirmed {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-hover);
+}
+
+.status-pending {
+  background: var(--color-amber-soft);
+  color: var(--color-amber);
+}
+
+.status-cancelled,
+.status-completed {
+  background: var(--color-rose-soft);
+  color: var(--color-rose);
+}
+
+.status-completed {
+  background: #e6e8ec;
+  color: var(--color-slate);
+}
