@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useBookingsList } from "../hooks/useBookingsList";
 import { BookingListItem } from "../components/BookingListItem";
 import { BookingDetailsPanel } from "../components/BookingDetailsPanel";
 import { LoadingState } from "../../../components/LoadingState";
@@ -9,6 +8,7 @@ import { EmptyState } from "../../../components/EmptyState";
 import { Button } from "../../../components/Button";
 import type { Booking } from "../../../types/domain";
 import "./MyBookingsPage.css";
+import { useBookingsList } from "../hooks/useBookingsList";
 
 export function MyBookingsPage() {
   const request = useBookingsList();
