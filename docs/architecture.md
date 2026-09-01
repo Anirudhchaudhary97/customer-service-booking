@@ -44,6 +44,7 @@ src/
 │   ├── booking/      # Booking flow
 │   └── bookings/     # My Bookings
 │
+├── pages/            # Top-level standalone pages (e.g. NotFoundPage)
 ├── components/       # Shared UI components
 ├── hooks/            # Shared React hooks
 ├── types/            # TypeScript types
