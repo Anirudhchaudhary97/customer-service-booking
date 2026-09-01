@@ -2,12 +2,6 @@
 
 A production-style React + TypeScript application representing a customer service booking flow for the Demo Marketplace platform. Built with an **API-first architecture**, clean layer separation, a robust mock API backend with latency and error simulation, and unit/component tests.
 
----
-
-## 🎥 Demo Video Link
-> **[Insert Jam / Loom Demo Video Link Here]**
-
----
 
 ## 🚀 Key Features & User Flow
 - **Service List (`/services`)**: Browse services with keyword search, interactive category pill filters, loading skeletons, empty states, and error retry logic.
