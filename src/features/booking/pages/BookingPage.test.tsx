@@ -29,6 +29,12 @@ async function selectFirstAvailableSlotAndContinue(user: ReturnType<typeof userE
     expect(screen.queryByText(/loading availability/i)).not.toBeInTheDocument();
   });
 
+  const dateTabs = screen.getAllByRole("tab");
+  const enabledDateTab = dateTabs.find((tab) => !tab.hasAttribute("disabled"));
+  if (enabledDateTab && !enabledDateTab.classList.contains("is-active")) {
+    await user.click(enabledDateTab);
+  }
+
   const timeButtons = await screen.findAllByRole("button", { name: /(AM|PM)/ });
   const enabledButton = timeButtons.find((btn) => !btn.hasAttribute("disabled"));
   expect(enabledButton).toBeDefined();
