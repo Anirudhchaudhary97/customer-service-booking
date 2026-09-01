@@ -1,0 +1,70 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-card);
+  transition: border-color 120ms ease;
+}
+
+.service-card:hover {
+  border-color: var(--color-accent);
+}
+
+.service-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-card-category {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-accent-hover);
+}
+
+.service-card-unavailable {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-rose);
+}
+
+.service-card-name {
+  font-size: 17px;
+}
+
+.service-card-desc {
+  color: var(--color-slate);
+  font-size: 13.5px;
+  flex-grow: 1;
+}
+
+.service-card-meta {
+  display: flex;
+  gap: var(--space-2);
+  font-size: 13px;
+  color: var(--color-slate);
+}
+
+.service-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-line);
+}
+
+.service-card-price {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.service-card-duration {
+  font-size: 13px;
+  color: var(--color-slate);
+}
