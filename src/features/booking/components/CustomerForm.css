@@ -1,0 +1,36 @@
+.customer-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 420px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.form-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-slate);
+}
+
+.form-field input {
+  padding: 10px 12px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  background: var(--color-surface);
+}
+
+.form-field input[aria-invalid="true"] {
+  border-color: var(--color-rose);
+}
+
+.form-field-error {
+  color: var(--color-rose);
+  font-size: 12.5px;
+  margin: 0;
+}
