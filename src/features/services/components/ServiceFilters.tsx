@@ -35,6 +35,16 @@ export function ServiceFilters({
           onChange={(e: ChangeEvent<HTMLInputElement>) => onSearchChange(e.target.value)}
           aria-label="Search services"
         />
+        {search && (
+          <button
+            type="button"
+            className="search-clear-button"
+            onClick={() => onSearchChange("")}
+            aria-label="Clear search"
+          >
+            ✕
+          </button>
+        )}
       </div>
 
       <div className="category-chips">

@@ -7,11 +7,12 @@
 
 .search-box {
   width: 100%;
+  position: relative;
 }
 
 .search-input {
   width: 100%;
-  padding: 12px 18px;
+  padding: 12px 40px 12px 18px;
   font-size: 0.95rem;
   font-family: inherit;
   background: #ffffff;
@@ -19,6 +20,30 @@
   border-radius: 10px;
   color: var(--color-ink, #17203a);
   transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-clear-button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e5e7eb;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.search-clear-button:hover {
+  background: #d1d5db;
+  color: #111827;
 }
 
 .search-input:focus {
