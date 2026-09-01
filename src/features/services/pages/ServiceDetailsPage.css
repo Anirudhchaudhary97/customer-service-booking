@@ -1,0 +1,66 @@
+.back-link {
+  display: inline-block;
+  color: var(--color-slate);
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: var(--space-5);
+}
+
+.back-link:hover {
+  color: var(--color-ink);
+}
+
+.service-details {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.service-details-category {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-accent-hover);
+}
+
+.service-details-header h1 {
+  font-size: 24px;
+  margin-top: var(--space-2);
+}
+
+.service-details-meta {
+  display: flex;
+  gap: var(--space-2);
+  color: var(--color-slate);
+  font-size: 14px;
+  margin-top: var(--space-2);
+}
+
+.service-details-description {
+  color: var(--color-ink);
+  max-width: 68ch;
+  line-height: 1.6;
+}
+
+.service-details-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-4);
+  margin: 0;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-line);
+}
+
+.service-details-facts dt {
+  font-size: 12px;
+  color: var(--color-slate);
+}
+
+.service-details-facts dd {
+  margin: var(--space-1) 0 0;
+  font-size: 15px;
+  font-weight: 600;
+}
